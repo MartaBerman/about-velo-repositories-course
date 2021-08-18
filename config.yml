@@ -1,0 +1,18 @@
+title: About Velo Repositories
+description: >-
+  In this course you will learn how repositories for Velo's API Reference docs
+  are set up. 
+template:
+  repo: about-velo-repositories-template
+  name: about-velo-repositories
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
